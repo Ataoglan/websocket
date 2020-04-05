@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Chat Application</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/jquery-1.10.2.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="connect">Mesajlasma Uygulamasi:</label>
+                    <button id="connect" type="button">Yeni Mesajlasma Baslat</button>
+                    <button id="disconnect" type="button" disabled="disabled">Mesajlasmayi Bitir
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table id="chat">
+                <thead>
+                <tr>
+                    <th>Hosgeldiniz lutfen kullanici adinizi giriniz</th>
+                </tr>
+                </thead>
+                <tbody id="helloworldmessage">
+                </tbody>
+            </table>
+        </div>
+            <div class="row">
+        
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <textarea id="user" placeholder="Mesajinizi buraya yaziniz.." required></textarea>
+                </div>
+                <button id="send" type="submit">Gonder</button>
+            </form>
+        </div>
+        </div>
+    </div>
+ 
+</div>
+</body>
+</html>
